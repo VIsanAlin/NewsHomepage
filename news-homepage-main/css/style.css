@@ -1,0 +1,100 @@
+:root {
+  --softOrange: hsl(35, 77%, 62%);
+  --softRed: hsl(5, 85%, 63%);
+  --offWhite: hsl(36, 100%, 99%);
+  --grayBlue: hsl(233, 8%, 79%);
+  --darkGrayBlue: hsl(236, 13%, 42%);
+  --veryDarkBlue: hsl(240, 100%, 5%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 375px) {
+  .desktop {
+    display: none;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 50px;
+    padding: 15px;
+    column-gap: 200px;
+  }
+
+  .mobileLogo {
+    display: inline-grid;
+  }
+
+  .mobileMenu {
+    display: inline-grid;
+    padding-top: 15px;
+  }
+
+  img.mobileWebImage {
+    padding: 10px;
+    width: 355px;
+  }
+
+  .content {
+    padding: 10px;
+    width: 355px;
+  }
+
+  div > h1 {
+    font-size: 42px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+  }
+
+  div > p {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-family: "Inter", sans-serif;
+  }
+
+  div > button {
+    padding: 8px 20px;
+    color: var(--offWhite);
+    background-color: var(--softRed);
+    border: 0;
+  }
+
+  div::after {
+    padding: 20px;
+  }
+
+  .new {
+    padding: 10px;
+    width: 355px;
+    background-color: var(--veryDarkBlue);
+    color: white;
+  }
+
+  .attribution {
+    font-size: 15px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .mobile {
+    display: none;
+  }
+
+  .attribution {
+    font-size: 15px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
