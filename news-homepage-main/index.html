@@ -26,47 +26,209 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="desktop">
-      <nav>
-        <img src="./assets/images/logo.svg" alt="Logo" />
-      </nav>
-      <img src="./assets/images/image-web-3-desktop.jpg" alt="imageWeb3" />
-      <div>
-        <h1>The Bright Future of Web 3.0?</h1>
-        <p>
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          realy fulfilling its promise?
-        </p>
-        <button>READ MORE</button>
-      </div>
-    </div>
-
     <div class="mobile">
+      <div id="menu" class="menu hidden">
+        <img
+          id="closeMenu"
+          src="./assets/images/icon-menu-close.svg"
+          alt="Close"
+          class="closeMenu hidden"
+          onclick="removeMenu()"
+        />
+        <p>Home</p>
+        <p>New</p>
+        <p>Popular</p>
+        <p>Trending</p>
+        <p>Categories</p>
+      </div>
       <nav class="navbar">
         <img src="./assets/images/logo.svg" alt="Logo" class="mobileLogo" />
-        <img src="./assets/images/icon-menu.svg" alt="" class="mobileMenu" />
+        <img
+          id="addMenu"
+          src="./assets/images/icon-menu.svg"
+          alt=""
+          class="mobileMenu"
+          onclick="menu()"
+        />
       </nav>
-      <img
-        src="./assets/images/image-web-3-mobile.jpg"
-        alt="imageWeb3"
-        class="mobileWebImage"
-      />
+
+      <div class="webImage">
+        <img
+          src="./assets/images/image-web-3-mobile.jpg"
+          alt="imageWeb3"
+          class="mobileWebImage"
+        />
+      </div>
       <div class="content">
         <h1>The Bright Future of Web 3.0?</h1>
         <p>
           We dive into the next evolution of the web that claims to put the
           power of the platforms back into the hands of the people. But is it
-          realy fulfilling its promise?
+          really fulfilling its promise?
         </p>
         <button class="readBtn">READ MORE</button>
       </div>
       <div class="new">
         <h1>New</h1>
-        <h2>Hydrogen VS Electric Cars</h2>
-        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <div class="newItem">
+          <h2>Hydrogen VS Electric Cars</h2>
+          <p class="answer">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          <p class="dif">_____________________________________________</p>
+        </div>
+
+        <div class="newItem">
+          <h2>The Downsides of AI Artistrty</h2>
+          <p class="answer">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+          <p class="dif">______________________________________________</p>
+        </div>
+
+        <div class="newItem">
+          <h2>Is VC Funding Drying Up?</h2>
+          <p class="answer">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
       </div>
-      <div class="answers"></div>
+      <div class="list">
+        <div class="listItem">
+          <div class="listImg">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="" srcset="" />
+          </div>
+          <div class="listTxt">
+            <h1>01</h1>
+            <h3>Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="listItem">
+          <div class="listImg">
+            <img src="assets/images/image-top-laptops.jpg" alt="" srcset="" />
+          </div>
+          <div class="listTxt">
+            <h1>02</h1>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="listItem">
+          <div class="listImg">
+            <img
+              src="./assets/images/image-gaming-growth.jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="listTxt">
+            <h1>03</h1>
+            <h3>The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="desktop">
+      <nav class="navbar">
+        <div>
+          <img src="./assets/images/logo.svg" alt="Logo" class="mobileLogo" />
+        </div>
+        <div class="menu">
+          <p>Home</p>
+          <p>New</p>
+          <p>Popular</p>
+          <p>Trending</p>
+          <p>Categories</p>
+        </div>
+      </nav>
+
+      <div class="brightNew">
+        <div class="bright">
+          <img
+            src="./assets/images/image-web-3-desktop.jpg"
+            alt="imageWeb3"
+            class="webImage"
+          />
+
+          <div class="content">
+            <div><h1>The Bright Future of Web 3.0?</h1></div>
+            <div>
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button class="readBtn">READ MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="new">
+          <h1>New</h1>
+          <div class="newItem">
+            <h2>Hydrogen VS Electric Cars</h2>
+            <p class="answer">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+            <p class="dif">__________________________</p>
+          </div>
+
+          <div class="newItem">
+            <h2>The Downsides of AI Artistrty</h2>
+            <p class="answer">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+            <p class="dif">___________________________</p>
+          </div>
+
+          <div class="newItem">
+            <h2>Is VC Funding Drying Up?</h2>
+            <p class="answer">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="list">
+        <div class="listItem">
+          <div class="listImg">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="" srcset="" />
+          </div>
+          <div class="listTxt">
+            <h1>01</h1>
+            <h3>Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="listItem">
+          <div class="listImg">
+            <img src="assets/images/image-top-laptops.jpg" alt="" srcset="" />
+          </div>
+          <div class="listTxt">
+            <h1>02</h1>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="listItem">
+          <div class="listImg">
+            <img
+              src="./assets/images/image-gaming-growth.jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="listTxt">
+            <h1>03</h1>
+            <h3>The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="attribution">
@@ -75,5 +237,27 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Visan Alin</a>.
     </div>
+
+    <script>
+      function menu() {
+        menu = document.getElementById("menu");
+        add = document.getElementById("addMenu");
+        close = document.getElementById("closeMenu");
+        add.classList.add("hidden");
+        close.classList.remove("hidden");
+        menu.classList.remove("hidden");
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function removeMenu() {
+        menu = document.getElementById("menu");
+        add = document.getElementById("addMenu");
+        close = document.getElementById("closeMenu");
+        add.classList.remove("hidden");
+        close.classList.add("hidden");
+        menu.classList.add("hidden");
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
   </body>
 </html>
